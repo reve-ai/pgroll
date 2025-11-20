@@ -8,8 +8,9 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"github.com/xataio/pgroll/cmd/flags"
-	"github.com/xataio/pgroll/pkg/roll"
+
+	"github.com/reve-ai/pgroll/cmd/flags"
+	"github.com/reve-ai/pgroll/pkg/roll"
 )
 
 func latestSchemaCmd() *cobra.Command {

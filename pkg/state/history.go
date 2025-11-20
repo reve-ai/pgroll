@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/lib/pq"
-	"github.com/xataio/pgroll/pkg/migrations"
-	"github.com/xataio/pgroll/pkg/schema"
+	"github.com/reve-ai/pgroll/pkg/migrations"
+	"github.com/reve-ai/pgroll/pkg/schema"
 )
 
 // HistoryEntry represents a single migration in the migration history

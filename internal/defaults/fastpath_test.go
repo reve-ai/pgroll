@@ -8,11 +8,12 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/xataio/pgroll/pkg/db"
-	"github.com/xataio/pgroll/pkg/roll"
 
-	"github.com/xataio/pgroll/internal/defaults"
-	"github.com/xataio/pgroll/internal/testutils"
+	"github.com/reve-ai/pgroll/pkg/db"
+	"github.com/reve-ai/pgroll/pkg/roll"
+
+	"github.com/reve-ai/pgroll/internal/defaults"
+	"github.com/reve-ai/pgroll/internal/testutils"
 )
 
 func TestMain(m *testing.M) {

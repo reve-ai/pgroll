@@ -9,8 +9,9 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"github.com/xataio/pgroll/pkg/migrations"
-	"github.com/xataio/pgroll/pkg/sql2pgroll"
+
+	"github.com/reve-ai/pgroll/pkg/migrations"
+	"github.com/reve-ai/pgroll/pkg/sql2pgroll"
 )
 
 func convertCmd() *cobra.Command {

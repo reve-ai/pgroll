@@ -6,9 +6,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/xataio/pgroll/cmd/flags"
-
 	"github.com/spf13/cobra"
+
+	"github.com/reve-ai/pgroll/cmd/flags"
 )
 
 var statusCmd = &cobra.Command{

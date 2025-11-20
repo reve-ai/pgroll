@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/xataio/pgroll/pkg/backfill"
-	"github.com/xataio/pgroll/pkg/schema"
+	"github.com/reve-ai/pgroll/pkg/backfill"
+	"github.com/reve-ai/pgroll/pkg/schema"
 )
 
 func TestCoordinator(t *testing.T) {

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/xataio/pgroll/pkg/migrations"
+	"github.com/reve-ai/pgroll/pkg/migrations"
 )
 
 func TestCreateIndex(t *testing.T) {

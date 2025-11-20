@@ -7,7 +7,8 @@ import (
 	"fmt"
 
 	"github.com/lib/pq"
-	"github.com/xataio/pgroll/pkg/db"
+
+	"github.com/reve-ai/pgroll/pkg/db"
 )
 
 const (

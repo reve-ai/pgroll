@@ -8,7 +8,8 @@ import (
 	"path/filepath"
 
 	"github.com/spf13/cobra"
-	"github.com/xataio/pgroll/pkg/migrations"
+
+	"github.com/reve-ai/pgroll/pkg/migrations"
 )
 
 func updateCmd() *cobra.Command {

@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/xataio/pgroll/pkg/migrations"
+	"github.com/reve-ai/pgroll/pkg/migrations"
 )
 
 func TestFileUpdater(t *testing.T) {

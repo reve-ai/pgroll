@@ -1,4 +1,4 @@
-module github.com/xataio/pgroll/dev
+module github.com/reve-ai/pgroll/dev
 
 go 1.24
 

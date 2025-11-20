@@ -3,9 +3,9 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/xataio/pgroll/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-green" alt="License - Apache 2.0"></a> &nbsp;
-  <a href="https://github.com/xataio/pgroll/actions?query=branch%3Amain"><img src="https://github.com/xataio/pgroll/actions/workflows/build.yml/badge.svg" alt="CI Build"></a> &nbsp;
-  <a href="https://github.com/xataio/pgroll/releases"><img src="https://img.shields.io/github/release/xataio/pgroll.svg?label=Release" alt="Release"></a> &nbsp;
+  <a href="https://github.com/reve-ai/pgroll/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-green" alt="License - Apache 2.0"></a> &nbsp;
+  <a href="https://github.com/reve-ai/pgroll/actions?query=branch%3Amain"><img src="https://github.com/xataio/pgroll/actions/workflows/build.yml/badge.svg" alt="CI Build"></a> &nbsp;
+  <a href="https://github.com/reve-ai/pgroll/releases"><img src="https://img.shields.io/github/release/xataio/pgroll.svg?label=Release" alt="Release"></a> &nbsp;
   <img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/xataio/pgroll/total"> &nbsp;
   <a href="https://pgroll.com/docs"><img alt="Static Badge" src="https://img.shields.io/badge/pgroll-documentation-page?style=flat&link=https%3A%2F%2Fpgroll.com%2Fdocs%2Flatest%2Fgetting-started"></a> &nbsp;
   <a href="https://xata.io/discord"><img src="https://img.shields.io/discord/996791218879086662?label=Discord" alt="Discord"></a> &nbsp;
@@ -50,14 +50,14 @@ See the [introductory blog post](https://pgroll.com/blog/introducing-pgroll-zero
 
 ### Binaries
 
-Binaries are available for Linux, macOS & Windows, check our [Releases](https://github.com/xataio/pgroll/releases).
+Binaries are available for Linux, macOS & Windows, check our [Releases](https://github.com/reve-ai/pgroll/releases).
 
 ### From source
 
 To install `pgroll` from the source, run the following command:
 
 ```sh
-go install github.com/xataio/pgroll@latest
+go install github.com/reve-ai/pgroll@latest
 ```
 
 Note: requires [Go 1.24](https://golang.org/doc/install) or later.
@@ -189,8 +189,8 @@ They can be seen [here](https://xataio.github.io/pgroll/benchmarks.html).
 
 We welcome contributions from the community! If you'd like to contribute to `pgroll`, please follow these guidelines:
 
-* Create an [issue](https://github.com/xataio/pgroll/issues) for any questions, bug reports, or feature requests.
-* Check the documentation and [existing issues](https://github.com/xataio/pgroll/issues) before opening a new issue.
+* Create an [issue](https://github.com/reve-ai/pgroll/issues) for any questions, bug reports, or feature requests.
+* Check the documentation and [existing issues](https://github.com/reve-ai/pgroll/issues) before opening a new issue.
 
 ### Contributing Code
 

@@ -11,9 +11,9 @@ import (
 
 	"github.com/lib/pq"
 
-	"github.com/xataio/pgroll/pkg/backfill/templates"
-	"github.com/xataio/pgroll/pkg/db"
-	"github.com/xataio/pgroll/pkg/schema"
+	"github.com/reve-ai/pgroll/pkg/backfill/templates"
+	"github.com/reve-ai/pgroll/pkg/db"
+	"github.com/reve-ai/pgroll/pkg/schema"
 )
 
 type TriggerDirection string

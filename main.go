@@ -5,7 +5,7 @@ package main
 import (
 	"os"
 
-	"github.com/xataio/pgroll/cmd"
+	"github.com/reve-ai/pgroll/cmd"
 )
 
 func main() {

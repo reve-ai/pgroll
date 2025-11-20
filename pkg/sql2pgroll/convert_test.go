@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/xataio/pgroll/pkg/migrations"
-	"github.com/xataio/pgroll/pkg/sql2pgroll"
+	"github.com/reve-ai/pgroll/pkg/migrations"
+	"github.com/reve-ai/pgroll/pkg/sql2pgroll"
 )
 
 func TestConvertToMigration(t *testing.T) {

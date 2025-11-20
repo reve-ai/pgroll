@@ -14,10 +14,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/xataio/pgroll/cmd/flags"
-	"github.com/xataio/pgroll/pkg/backfill"
-	"github.com/xataio/pgroll/pkg/migrations"
-	"github.com/xataio/pgroll/pkg/roll"
+	"github.com/reve-ai/pgroll/cmd/flags"
+	"github.com/reve-ai/pgroll/pkg/backfill"
+	"github.com/reve-ai/pgroll/pkg/migrations"
+	"github.com/reve-ai/pgroll/pkg/roll"
 )
 
 func startCmd() *cobra.Command {
