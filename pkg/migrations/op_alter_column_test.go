@@ -9,8 +9,8 @@ import (
 	"github.com/oapi-codegen/nullable"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/xataio/pgroll/internal/testutils"
-	"github.com/xataio/pgroll/pkg/migrations"
+	"github.com/reve-ai/pgroll/internal/testutils"
+	"github.com/reve-ai/pgroll/pkg/migrations"
 )
 
 func TestAlterColumnMultipleSubOperations(t *testing.T) {

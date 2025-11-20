@@ -10,7 +10,7 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
-	"github.com/xataio/pgroll/cmd"
+	"github.com/reve-ai/pgroll/cmd"
 )
 
 type Result struct {

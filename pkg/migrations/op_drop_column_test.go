@@ -7,10 +7,10 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/xataio/pgroll/internal/testutils"
-	"github.com/xataio/pgroll/pkg/backfill"
-	"github.com/xataio/pgroll/pkg/migrations"
-	"github.com/xataio/pgroll/pkg/roll"
+	"github.com/reve-ai/pgroll/internal/testutils"
+	"github.com/reve-ai/pgroll/pkg/backfill"
+	"github.com/reve-ai/pgroll/pkg/migrations"
+	"github.com/reve-ai/pgroll/pkg/roll"
 )
 
 func TestDropColumnWithDownSQL(t *testing.T) {

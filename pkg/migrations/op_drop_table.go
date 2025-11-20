@@ -5,8 +5,8 @@ package migrations
 import (
 	"context"
 
-	"github.com/xataio/pgroll/pkg/db"
-	"github.com/xataio/pgroll/pkg/schema"
+	"github.com/reve-ai/pgroll/pkg/db"
+	"github.com/reve-ai/pgroll/pkg/schema"
 )
 
 var (

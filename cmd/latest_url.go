@@ -6,8 +6,9 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/xataio/pgroll/cmd/flags"
-	"github.com/xataio/pgroll/internal/connstr"
+
+	"github.com/reve-ai/pgroll/cmd/flags"
+	"github.com/reve-ai/pgroll/internal/connstr"
 )
 
 func latestURLCmd() *cobra.Command {

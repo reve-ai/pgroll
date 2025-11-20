@@ -8,7 +8,8 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"github.com/xataio/pgroll/pkg/roll"
+
+	"github.com/reve-ai/pgroll/pkg/roll"
 )
 
 func latestMigrationCmd() *cobra.Command {

@@ -11,7 +11,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/lib/pq"
 
-	"github.com/xataio/pgroll/pkg/db"
+	"github.com/reve-ai/pgroll/pkg/db"
 )
 
 // DBAction is an interface for common database actions

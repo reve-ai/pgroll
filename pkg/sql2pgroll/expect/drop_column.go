@@ -3,8 +3,8 @@
 package expect
 
 import (
-	"github.com/xataio/pgroll/pkg/migrations"
-	"github.com/xataio/pgroll/pkg/sql2pgroll"
+	"github.com/reve-ai/pgroll/pkg/migrations"
+	"github.com/reve-ai/pgroll/pkg/sql2pgroll"
 )
 
 var DropColumnOp1 = &migrations.OpDropColumn{

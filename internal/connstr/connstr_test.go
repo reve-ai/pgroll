@@ -6,7 +6,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/xataio/pgroll/internal/connstr"
+
+	"github.com/reve-ai/pgroll/internal/connstr"
 )
 
 func TestAppendSearchPathOption(t *testing.T) {

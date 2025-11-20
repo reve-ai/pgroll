@@ -14,12 +14,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/xataio/pgroll/internal/testutils"
-	"github.com/xataio/pgroll/pkg/backfill"
-	"github.com/xataio/pgroll/pkg/migrations"
-	"github.com/xataio/pgroll/pkg/roll"
-	"github.com/xataio/pgroll/pkg/schema"
-	"github.com/xataio/pgroll/pkg/state"
+	"github.com/reve-ai/pgroll/internal/testutils"
+	"github.com/reve-ai/pgroll/pkg/backfill"
+	"github.com/reve-ai/pgroll/pkg/migrations"
+	"github.com/reve-ai/pgroll/pkg/roll"
+	"github.com/reve-ai/pgroll/pkg/schema"
+	"github.com/reve-ai/pgroll/pkg/state"
 )
 
 func TestMain(m *testing.M) {

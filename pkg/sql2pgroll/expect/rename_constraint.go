@@ -2,7 +2,7 @@
 
 package expect
 
-import "github.com/xataio/pgroll/pkg/migrations"
+import "github.com/reve-ai/pgroll/pkg/migrations"
 
 var RenameConstraintOp1 = &migrations.OpRenameConstraint{
 	Table: "foo",

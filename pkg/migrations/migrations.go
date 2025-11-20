@@ -9,9 +9,9 @@ import (
 
 	_ "github.com/lib/pq"
 
-	"github.com/xataio/pgroll/pkg/backfill"
-	"github.com/xataio/pgroll/pkg/db"
-	"github.com/xataio/pgroll/pkg/schema"
+	"github.com/reve-ai/pgroll/pkg/backfill"
+	"github.com/reve-ai/pgroll/pkg/db"
+	"github.com/reve-ai/pgroll/pkg/schema"
 )
 
 // Operation is an operation that can be applied to a schema

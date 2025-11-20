@@ -10,8 +10,8 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/xataio/pgroll/internal/testutils"
-	"github.com/xataio/pgroll/pkg/migrations"
+	"github.com/reve-ai/pgroll/internal/testutils"
+	"github.com/reve-ai/pgroll/pkg/migrations"
 )
 
 func TestCreateTable(t *testing.T) {
@@ -1233,7 +1233,7 @@ func TestCreateTable(t *testing.T) {
 			},
 		},
 		{
-			// Testcase for https://github.com/xataio/pgroll/issues/965
+			// Testcase for https://github.com/reve-ai/pgroll/issues/965
 			name: "create table with a generated column doesn't break subsequent migrations",
 			migrations: []migrations.Migration{
 				{

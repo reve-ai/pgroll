@@ -10,8 +10,8 @@ import (
 	"strings"
 
 	"github.com/lib/pq"
-	"github.com/xataio/pgroll/pkg/db"
-	"github.com/xataio/pgroll/pkg/schema"
+	"github.com/reve-ai/pgroll/pkg/db"
+	"github.com/reve-ai/pgroll/pkg/schema"
 )
 
 // duplicator duplicates a column in a table, including all constraints and

@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/xataio/pgroll/internal/defaults"
-	"github.com/xataio/pgroll/pkg/backfill"
-	"github.com/xataio/pgroll/pkg/db"
-	"github.com/xataio/pgroll/pkg/schema"
+	"github.com/reve-ai/pgroll/internal/defaults"
+	"github.com/reve-ai/pgroll/pkg/backfill"
+	"github.com/reve-ai/pgroll/pkg/db"
+	"github.com/reve-ai/pgroll/pkg/schema"
 )
 
 var (

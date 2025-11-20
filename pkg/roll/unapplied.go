@@ -8,7 +8,7 @@ import (
 	"io/fs"
 	"sort"
 
-	"github.com/xataio/pgroll/pkg/migrations"
+	"github.com/reve-ai/pgroll/pkg/migrations"
 )
 
 // UnappliedMigrations returns the slice of unapplied migrations from `dir`
