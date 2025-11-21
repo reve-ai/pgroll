@@ -5,6 +5,9 @@ package migrations_test
 import (
 	"context"
 	"encoding/json"
+	"io/fs"
+	"os"
+	"path/filepath"
 	"testing"
 	"testing/fstest"
 
@@ -152,6 +155,43 @@ func TestAllNonDeprecatedOperationsAreCreateable(t *testing.T) {
 			assert.NoError(t, err)
 			_, ok := op.(migrations.Createable)
 			assert.True(t, ok, "operation %q must have a Create function", opName)
+		})
+	}
+}
+
+// While the example files can all be tested using `make examples`, it seems reasonable to
+// verify in basic unit tests that the files will parse sanely.
+func TestExampleFilesParse(t *testing.T) {
+	// go ensures that the working directory is the directory the test file is defined in,
+	// regardless of where we are invoked from.
+	dir, err := os.Getwd()
+	if err != nil {
+		t.Fatal(err)
+	}
+	exampleDirPath := filepath.Join(filepath.Dir(filepath.Dir(dir)), "examples")
+	dirFS := os.DirFS(exampleDirPath)
+	files := []string{}
+	err = fs.WalkDir(dirFS, ".", func(path string, d fs.DirEntry, err error) error {
+		if err != nil {
+			t.Logf("Unexpected error %v while walking %q", err, path)
+			return err
+		}
+		if (d.Type() & fs.ModeType) != 0 {
+			return nil // not a regular file
+		}
+		extension := filepath.Ext(path)
+		if extension == ".json" || extension == ".yaml" || extension == ".yml" {
+			files = append(files, path)
+		}
+		return nil
+	})
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, file := range files {
+		t.Run(file, func(t *testing.T) {
+			_, err := migrations.ReadMigration(dirFS, file)
+			assert.NoError(t, err)
 		})
 	}
 }
