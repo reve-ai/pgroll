@@ -8,10 +8,10 @@ import (
 	"testing"
 	"testing/fstest"
 
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 	"github.com/reve-ai/pgroll/pkg/migrations"
 	"github.com/reve-ai/pgroll/pkg/schema"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestMigrationsIsolated(t *testing.T) {

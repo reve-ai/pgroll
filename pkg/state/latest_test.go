@@ -7,11 +7,11 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	"github.com/reve-ai/pgroll/internal/testutils"
 	"github.com/reve-ai/pgroll/pkg/backfill"
 	"github.com/reve-ai/pgroll/pkg/migrations"
 	"github.com/reve-ai/pgroll/pkg/roll"
+	"github.com/stretchr/testify/require"
 )
 
 func TestLatestAndPreviousMigrationMethods(t *testing.T) {

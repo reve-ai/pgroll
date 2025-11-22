@@ -5,8 +5,8 @@ package migrations_test
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	"github.com/reve-ai/pgroll/pkg/migrations"
+	"github.com/stretchr/testify/require"
 )
 
 func TestFileUpdater(t *testing.T) {

@@ -5,8 +5,8 @@ package backfill
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
 	"github.com/reve-ai/pgroll/pkg/schema"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestBuildFunction(t *testing.T) {

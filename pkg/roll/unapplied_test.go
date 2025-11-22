@@ -11,12 +11,12 @@ import (
 	"testing"
 	"testing/fstest"
 
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 	"github.com/reve-ai/pgroll/internal/testutils"
 	"github.com/reve-ai/pgroll/pkg/backfill"
 	"github.com/reve-ai/pgroll/pkg/migrations"
 	"github.com/reve-ai/pgroll/pkg/roll"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestUnappliedMigrations(t *testing.T) {

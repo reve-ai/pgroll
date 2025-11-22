@@ -5,9 +5,9 @@ package migrations
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	"github.com/reve-ai/pgroll/pkg/backfill"
 	"github.com/reve-ai/pgroll/pkg/schema"
+	"github.com/stretchr/testify/require"
 )
 
 func TestCoordinator(t *testing.T) {
