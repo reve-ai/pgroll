@@ -6,9 +6,9 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
 	"github.com/reve-ai/pgroll/internal/testutils"
 	"github.com/reve-ai/pgroll/pkg/migrations"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestDropMultiColumnConstraint(t *testing.T) {
