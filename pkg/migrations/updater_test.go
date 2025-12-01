@@ -30,7 +30,7 @@ func TestFileUpdater(t *testing.T) {
 
 		t.Run("update with create_index operation", func(t *testing.T) {
 			rawMigration := &migrations.RawMigration{
-				Operations: []byte(`[{"create_index": {"name": "idx_test", "columns": ["col1", "col2"]}}]`),
+				Operations: []byte(`[{"create_index": {"name": "idx_test", "columns": [{"column": "col1"}, {"column": "col2"}]}}]`),
 			}
 			migration, err := updater.Update(rawMigration)
 			require.NoError(t, err, "expected no error for valid create_index operation")
@@ -42,10 +42,10 @@ func TestFileUpdater(t *testing.T) {
 			require.NotNil(t, createIndexOp.Columns, "expected columns to be present")
 
 			expectedColumns := migrations.OpCreateIndexColumns{
-				"col1": migrations.IndexField{},
-				"col2": migrations.IndexField{},
+				{Column: "col1"},
+				{Column: "col2"},
 			}
-			require.Equal(t, expectedColumns, createIndexOp.Columns, "columns should be transformed to a map")
+			require.Equal(t, expectedColumns, createIndexOp.Columns, "column order should be preserved")
 		})
 
 		t.Run("update with no create_index operation", func(t *testing.T) {
@@ -64,8 +64,8 @@ func TestFileUpdater(t *testing.T) {
 		t.Run("update with multiple operations", func(t *testing.T) {
 			rawMigration := &migrations.RawMigration{
 				Operations: []byte(`[
-				{"create_index": {"name": "idx_test1", "columns": ["col1"]}},
-				{"create_index": {"name": "idx_test2", "columns": ["col2"]}}
+				{"create_index": {"name": "idx_test1", "columns": [{"column": "col1"}]}},
+				{"create_index": {"name": "idx_test2", "columns": [{"column": "col2"}]}}
 			]`),
 			}
 			migration, err := updater.Update(rawMigration)
@@ -83,7 +83,7 @@ func TestFileUpdater(t *testing.T) {
 			rawMigration := &migrations.RawMigration{
 				Operations: []byte(`[
 				{"create_table": {"name": "test_table"}},
-				{"create_index": {"name": "idx_test", "columns": ["col1", "col2"]}}
+				{"create_index": {"name": "idx_test", "columns": [{"column": "col1"}, {"column": "col2"}]}}
 			]`),
 			}
 			migration, err := updater.Update(rawMigration)
@@ -97,11 +97,11 @@ func TestFileUpdater(t *testing.T) {
 			op = migration.Operations[1]
 			createIndexOp, ok := op.(*migrations.OpCreateIndex)
 			require.True(t, ok, "expected create_index operation to be present")
-			require.NotNil(t, createIndexOp.Columns, "expected columns to be a map for create_index operation")
+			require.NotNil(t, createIndexOp.Columns, "expected columns to be present")
 
 			expectedColumns := migrations.OpCreateIndexColumns{
-				"col1": migrations.IndexField{},
-				"col2": migrations.IndexField{},
+				{Column: "col1"},
+				{Column: "col2"},
 			}
 			require.Equal(t, expectedColumns, createIndexOp.Columns, "columns should be transformed to a map")
 		})
